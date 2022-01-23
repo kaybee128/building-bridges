@@ -6,7 +6,7 @@ const methodOverride = require('method-override')
 const app = express()
 
 
-mongoose.connect('mongodb://localhost/blog', {
+mongoose.connect('mongodb://https://bear-a-hand.herokuapp.com/blog', {
   useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true
 })
 
