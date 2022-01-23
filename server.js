@@ -5,8 +5,8 @@ const articleRouter = require('./routes/articles')
 const methodOverride = require('method-override')
 const app = express()
 
-
-mongoose.connect('mongodb://https://bear-a-hand.herokuapp.com/blog', {
+const url = `mongodb+srv://xyz:123@cluster0.vh7jr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+mongoose.connect(url, {
   useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true
 })
 
